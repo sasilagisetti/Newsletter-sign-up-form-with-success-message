@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/images/favicon-32x32.png">
+    <title>Newsletter sign-up form with success message</title>
+</head>
+<body>
+    <div id="card">
+        <div class="left">
+            <h1>Stay updated!</h1>
+            <h5>Join 60,000+ product managers receiving monthly updates on:</h5> 
+            <div class="left-items">
+                <span><img src="assets/images/icon-list.svg" alt=""><h6>Measuring to ensure updates are a success</h6></span>
+                <span><img src="assets/images/icon-list.svg" alt=""><h6>Product discovery and building what matters</h6></span>
+                <span><img src="assets/images/icon-list.svg" alt=""><h6>And much more!</h6></span>
+            </div>
+            <form action="">
+                <label for="email">Email address</label>
+                <input type="email" name="email" id="email" pattern=".+@example\.com" placeholder="email@company.com" maxlength="40" required>
+                <input type="submit" id="btn" value="Subscribe to monthly newsletter"></input>
+            </form>
+        </div>
+        <div class="right">
+        </div>
+    </div>
+    <div id="submitcard">
+        <img src="assets/images/icon-success.svg" alt="">
+        <h1>Thanks for subscribing!</h1>
+        <div class="submit-p"></div>
+        <input type="submit" id="dismiss" value="Dismiss message"></input>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
